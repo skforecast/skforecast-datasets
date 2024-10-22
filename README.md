@@ -13,7 +13,7 @@ data = fetch_dataset(name="h20")
 
 ### h2o
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/h2o.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/h2o.csv
 + sep: ','
 + index_col: fecha
 + date_format: %Y-%m-%d
@@ -23,7 +23,7 @@ data = fetch_dataset(name="h20")
 
 ### h2o_exog
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/h2o_exog.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/h2o_exog.csv
 + sep: ','
 + index_col: fecha
 + date_format: %Y-%m-%d
@@ -34,7 +34,7 @@ data = fetch_dataset(name="h20")
 
 ### fuel_consumption
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/consumos-combustibles-mensual.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/consumos-combustibles-mensual.csv
 + sep: ','
 + index_col: Fecha
 + date_format: %Y-%m-%d
@@ -44,7 +44,7 @@ data = fetch_dataset(name="h20")
 
 ### items_sales
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/simulated_items_sales.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/simulated_items_sales.csv
 + sep: ','
 + index_col: date
 + date_format: %Y-%m-%d
@@ -54,7 +54,7 @@ data = fetch_dataset(name="h20")
 
 ### air_quality_valencia
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/air_quality_valencia.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/air_quality_valencia.csv
 + sep: ','
 + index_col: datetime
 + date_format: date_format: %Y-%m-%d %H:%M:%S
@@ -64,7 +64,7 @@ data = fetch_dataset(name="h20")
 
 ### website_visits
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/visitas_por_dia_web_cienciadedatos.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/visitas_por_dia_web_cienciadedatos.csv
 + sep: ","
 + index_col: date
 + date_format: %Y-%m-%d
@@ -74,7 +74,7 @@ data = fetch_dataset(name="h20")
 
 ### bike_sharing
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/bike_sharing_dataset_clean.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/bike_sharing_dataset_clean.csv
 + sep: ','
 + index_col: date_time
 + date_format: %Y-%m-%d %H:%M:%S
@@ -84,7 +84,7 @@ data = fetch_dataset(name="h20")
 
 ### bike_sharing_extended_features
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/bike_sharing_extended_features.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/bike_sharing_extended_features.csv
 + sep: ','
 + index_col: date_time
 + date_format: %Y-%m-%d %H:%M:%S
@@ -94,7 +94,7 @@ data = fetch_dataset(name="h20")
 
 ### australia_tourism
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/australia_tourism.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/australia_tourism.csv
 + sep: ','
 + index_col: date_time
 + date_format: %Y-%m-%d
@@ -104,7 +104,7 @@ data = fetch_dataset(name="h20")
 
 ### uk_daily_flights
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/uk_daily_flights.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/uk_daily_flights.csv
 + sep: ','
 + index_col: Date
 + date_format: %Y-%m-%d
@@ -115,7 +115,7 @@ data = fetch_dataset(name="h20")
 
 ### wikipedia_visits
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/wikipedia_visits.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/wikipedia_visits.csv
 + sep: ','
 + index_col: date
 + date_format: %Y-%m-%d
@@ -126,7 +126,7 @@ data = fetch_dataset(name="h20")
 
 ### vic_electricity
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/vic_electricity.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/vic_electricity.csv
 + sep: ','
 + index_col: Time
 + date_format: %Y-%m-%dT%H:%M:%SZ
@@ -137,7 +137,7 @@ data = fetch_dataset(name="h20")
 
 ### store_sales
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/store_sales.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/store_sales.csv
 + sep: ','
 + index_col: date,
 + date_format: %Y-%m-%d
@@ -147,7 +147,7 @@ data = fetch_dataset(name="h20")
 
 ### bicimad
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/bicimad_users.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/bicimad_users.csv
 + sep: ','
 + index_col: date,
 + date_format: %Y-%m-%d
@@ -157,7 +157,7 @@ data = fetch_dataset(name="h20")
 
 ### m4_hourly
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/m4_hourly.parquet
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/m4_hourly.parquet
 + sep: 
 + index_col: start_timestamp,
 + timestamp: %Y-%m-%d %H:%M:%S
@@ -167,7 +167,7 @@ data = fetch_dataset(name="h20")
 
 ### m4_daily
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/m4_daily.parquet
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/m4_daily.parquet
 + sep: 
 + index_col: start_timestamp,
 + timestamp: %Y-%m-%d %H:%M:%S
@@ -178,7 +178,7 @@ data = fetch_dataset(name="h20")
 
 ### air_pollution
 
-+ url: https://raw.githubusercontent.com/JoaquinAmatRodrigo/skforecast-datasets/main/data/guangyuan_air_pollution.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/guangyuan_air_pollution.csv
 + sep: ','
 + index_col: date
 + date_format: %Y-%m-%d
