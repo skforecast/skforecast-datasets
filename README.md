@@ -59,7 +59,7 @@ data = fetch_dataset(name="h20")
 + index_col: datetime
 + date_format: date_format: %Y-%m-%d %H:%M:%S
 + freq: H
-+ description: Hourly measures of several air quimical pollutant (pm2.5, co, no, no2, pm10, nox, o3, so2) at Valencia city.
++ description: Hourly measures of several air chemical pollutant (pm2.5, co, no, no2, pm10, nox, o3, veloc. (air speed), direc. (air direction), so2) at Valencia city. Units are (µg/m3) for pm2.5, no, no2, pm10, so2, (mg/m3) for co, (m/s) for veloc. and (degrees) for direc.
 + source: Red de Vigilancia y Control de la Contaminación Atmosférica, 46250054-València - Centre, https://mediambient.gva.es/es/web/calidad-ambiental/datos-historicos
 
 ### website_visits
@@ -112,7 +112,6 @@ data = fetch_dataset(name="h20")
 + description: Daily number of flights in UK from 02/01/2019 to 23/01/2022.
 + source: Experimental statistics published as part of the Economic activity and social change in the UK, real-time indicators release, Published 27 January 2022. Daily flight numbers are available in the dashboard provided by the European Organisation for the Safety of Air Navigation (EUROCONTROL). https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/economicactivityandsocialchangeintheukrealtimeindicators/latest
 
-
 ### wikipedia_visits
 
 + url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/wikipedia_visits.csv
@@ -122,7 +121,6 @@ data = fetch_dataset(name="h20")
 + freq: D
 + description: Log daily page views for the Wikipedia page for Peyton Manning. Scraped data using the Wikipediatrend package in R.
 + source: https://github.com/facebook/prophet/blob/main/examples/example_wp_log_peyton_manning.csv
-
 
 ### vic_electricity
 
@@ -134,12 +132,11 @@ data = fetch_dataset(name="h20")
 + description: Half-hourly electricity demand for Victoria, Australia
 + source: O'Hara-Wild M, Hyndman R, Wang E, Godahewa R (2022).tsibbledata: Diverse Datasets for 'tsibble'. https://tsibbledata.tidyverts.org/, https://github.com/tidyverts/tsibbledata/. https://tsibbledata.tidyverts.org/reference/vic_elec.html
 
-
 ### store_sales
 
 + url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/store_sales.csv
 + sep: ','
-+ index_col: date,
++ index_col: date
 + date_format: %Y-%m-%d
 + freq: D
 + description: This dataset contains 913,000 sales transactions from 2013-01-01 to 2017-12-31 for 50 products (SKU) in 10 stores.
@@ -149,39 +146,58 @@ data = fetch_dataset(name="h20")
 
 + url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/bicimad_users.csv
 + sep: ','
-+ index_col: date,
++ index_col: date
 + date_format: %Y-%m-%d
 + freq: D
 + description: This dataset contains the daily users of the bicycle rental service (BiciMad) in the city of Madrid (Spain) from 2014-06-23 to 2022-09-30.
 + source: Portal de datos abiertos del Ayuntamiento de Madrid https://datos.madrid.es/portal/site/egob'
 
-### m4_hourly
-
-+ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/m4_hourly.parquet
-+ sep: 
-+ index_col: start_timestamp,
-+ timestamp: %Y-%m-%d %H:%M:%S
-+ freq: H
-+ description: Time series with hourly frequency from the M4 competition.
-+ source: Monash Time Series Forecasting Repository  (https://zenodo.org/communities/forecasting) Godahewa, R., Bergmeir, C., Webb, G. I., Hyndman, R. J., & Montero-Manso, P. (2021). Monash Time Series Forecasting Archive. In Neural Information Processing Systems Track on Datasets and Benchmarks.
-
 ### m4_daily
 
 + url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/m4_daily.parquet
 + sep: 
-+ index_col: start_timestamp,
++ index_col: start_timestamp
 + timestamp: %Y-%m-%d %H:%M:%S
 + freq: H
 + description: Time series with daily frequency from the M4 competition.
 + source: Monash Time Series Forecasting Repository  (https://zenodo.org/communities/forecasting) Godahewa, R., Bergmeir, C., Webb, G. I., Hyndman, R. J., & Montero-Manso, P. (2021). Monash Time Series Forecasting Archive. In Neural Information Processing Systems Track on Datasets and Benchmarks.
 
+### m4_hourly
 
-### air_pollution
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/m4_hourly.parquet
++ sep: 
++ index_col: start_timestamp
++ timestamp: %Y-%m-%d %H:%M:%S
++ freq: H
++ description: Time series with hourly frequency from the M4 competition.
++ source: Monash Time Series Forecasting Repository  (https://zenodo.org/communities/forecasting) Godahewa, R., Bergmeir, C., Webb, G. I., Hyndman, R. J., & Montero-Manso, P. (2021). Monash Time Series Forecasting Archive. In Neural Information Processing Systems Track on Datasets and Benchmarks.
 
-+ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/guangyuan_air_pollution.csv
-+ sep: ','
-+ index_col: date
+### ashrae_daily
+
++ url: https://drive.google.com/file/d/1fMsYjfhrFLmeFjKG3jenXjDa5s984ThC/view?usp=sharing
++ sep: 
++ index_col: timestamp
 + date_format: %Y-%m-%d
 + freq: D
-+ description:
-+ source:
++ description: Daily energy consumption data from the ASHRAE competition with building metadata and weather data.
++ source: Kaggle competition Addison Howard, Chris Balbach, Clayton Miller, Jeff Haberl, Krishnan Gowri, Sohier Dane. (2019). ASHRAE - Great Energy Predictor III. Kaggle. https://www.kaggle.com/c/ashrae-energy-prediction/overview
+
+### bdg2_daily
+
++ url: https://drive.google.com/file/d/1KHYopzclKvS1F6Gt6GoJWKnxiuZ2aqen/view?usp=sharing
++ sep: 
++ index_col: timestamp
++ date_format: %Y-%m-%d
++ freq: D
++ description: Daily energy consumption data from the The Building Data Genome Project 2 with building metadata and weather data. https://github.com/buds-lab/building-data-genome-project-2
++ source: Miller, C., Kathirgamanathan, A., Picchetti, B. et al. The Building Data Genome Project 2, energy meter data from the ASHRAE Great Energy Predictor III competition. Sci Data 7, 368 (2020). https://doi.org/10.1038/s41597-020-00712-x
+
+### bdg2_hourly
+
++ url: https://drive.google.com/file/d/1I2i5mZJ82Cl_SHPTaWJmLoaXnntdCgh7/view?usp=sharing
++ sep: 
++ index_col: timestamp
++ date_format: %Y-%m-%d %H:%M:%S
++ freq: H
++ description: Hourly energy consumption data from the The Building Data Genome Project 2 with building metadata and weather data. https://github.com/buds-lab/building-data-genome-project-2
++ source: Miller, C., Kathirgamanathan, A., Picchetti, B. et al. The Building Data Genome Project 2, energy meter data from the ASHRAE Great Energy Predictor III competition. Sci Data 7, 368 (2020). https://doi.org/10.1038/s41597-020-00712-x
