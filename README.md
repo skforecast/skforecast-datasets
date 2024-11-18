@@ -211,3 +211,14 @@ data = fetch_dataset(name="h20")
 + freq: H
 + description: Hourly energy consumption data from the The Building Data Genome Project 2 with building metadata and weather data. https://github.com/buds-lab/building-data-genome-project-2
 + source: Miller, C., Kathirgamanathan, A., Picchetti, B. et al. The Building Data Genome Project 2, energy meter data from the ASHRAE Great Energy Predictor III competition. Sci Data 7, 368 (2020). https://doi.org/10.1038/s41597-020-00712-x
+
+
+### m5
+
++ url: https://drive.google.com/file/d/1c6HldcZPdlvVr5P0RCPEWkUiqkAo42I1/view?usp=sharing
++ sep: 
++ index_col: timestamp
++ date_format: %Y-%m-%d
++ freq: D
++ description: Daily sales data from the M5 competition with product metadata and calendar data.
++ source: Addison Howard, inversion, Spyros Makridakis, and vangelis. M5 Forecasting - Accuracy. https://kaggle.com/competitions/m5-forecasting-accuracy, 2020. Kaggle.
