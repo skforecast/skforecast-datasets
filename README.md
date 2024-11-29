@@ -252,7 +252,7 @@ data = fetch_dataset(name="h20")
 ### ett_m1
 
 + url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/refs/heads/main/data/ETTm1.csv
-+ sep: 
++ sep: ','
 + index_col: date
 + date_format: %Y-%m-%d %H:%M:%S
 + freq: 15min
@@ -264,7 +264,7 @@ data = fetch_dataset(name="h20")
 ### ett_m2
 
 + url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/ETTm2.csv
-+ sep: 
++ sep: ','
 + index_col: date
 + date_format: %Y-%m-%d %H:%M:%S
 + freq: 15min
