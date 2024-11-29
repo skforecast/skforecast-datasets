@@ -251,7 +251,7 @@ data = fetch_dataset(name="h20")
 
 ### ett_m1
 
-+ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/ETTm1.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/refs/heads/main/data/ETTm1.csv
 + sep: 
 + index_col: date
 + date_format: %Y-%m-%d %H:%M:%S
