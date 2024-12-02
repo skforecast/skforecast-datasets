@@ -271,3 +271,15 @@ data = fetch_dataset(name="h20")
 + file_type: csv
 + description: Data from an electricity transformer station was collected between July 2016 and July 2018 (2 years × 365 days × 24 hours × 4 intervals per hour = 70,080 data points). Each data point consists of 8 features, including the date of the point, the predictive value "Oil Temperature (OT)", and 6 different types of external power load features: High UseFul Load (HUFL), High UseLess Load (HULL), Middle UseFul Load (MUFL), Middle UseLess Load (MULL), Low UseFul Load (LUFL), Low UseLess Load(LULL).
 + source: Zhou, Haoyi & Zhang, Shanghang & Peng, Jieqi & Zhang, Shuai & Li, Jianxin & Xiong, Hui & Zhang, Wancai. (2020). Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting. [10.48550/arXiv.2012.07436](https://arxiv.org/abs/2012.07436). https://github.com/zhouhaoyi/ETDataset
+
+
+### expenditures_australia
+
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/ETTm2.csv
++ sep: ','
++ index_col: date
++ date_format: %Y-%m-%d
++ freq: MS
++ file_type: csv
++ description: Monthly expenditure on cafes, restaurants and takeaway food services in Victoria (Australia) from April 1982 up to April 2024.
++ source: Australian Bureau of Statistics. Catalogue No. 8501.0 https://www.abs.gov.au/statistics/industry/retail-and-wholesale-trade/retail-trade-australia/apr-2024/8501011.xlsx
