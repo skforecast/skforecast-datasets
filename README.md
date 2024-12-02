@@ -275,7 +275,7 @@ data = fetch_dataset(name="h20")
 
 ### expenditures_australia
 
-+ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/ETTm2.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/refs/heads/main/data/expenditures_australia.csv
 + sep: ','
 + index_col: date
 + date_format: %Y-%m-%d
