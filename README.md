@@ -287,7 +287,7 @@ data = fetch_dataset(name="h20")
 
 ### public_transport_madrid
 
-+ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/refs/heads/main/data/expenditures_australia.csv
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/refs/heads/main/data/public-transport-madrid.csv
 + sep: ','
 + index_col: date
 + date_format: %Y-%m-%d
