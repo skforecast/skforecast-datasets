@@ -221,6 +221,18 @@ data = fetch_dataset(name="h20")
 + description: Daily energy consumption data from the The Building Data Genome Project 2 with building metadata and weather data. https://github.com/buds-lab/building-data-genome-project-2
 + source: Miller, C., Kathirgamanathan, A., Picchetti, B. et al. The Building Data Genome Project 2, energy meter data from the ASHRAE Great Energy Predictor III competition. Sci Data 7, 368 (2020). https://doi.org/10.1038/s41597-020-00712-x
 
+### bdg2_daily_sample
+
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/refs/heads/main/data/bdg2_daily_sample.csv
++ sep: 
++ index_col: timestamp
++ date_format: %Y-%m-%d %H:%M:%S
++ freq: H
++ file_type: csv
++ description: Daily energy consumption data of three buildings sampled from the The Building Data Genome Project 2. https://github.com/buds-lab/building-data-genome-project-2
++ source: Miller, C., Kathirgamanathan, A., Picchetti, B. et al. The Building Data Genome Project 2, energy meter data from the ASHRAE Great Energy Predictor III competition. Sci Data 7, 368 (2020). https://doi.org/10.1038/s41597-020-00712-x
+
+
 ### bdg2_hourly
 
 + url: https://drive.google.com/file/d/1I2i5mZJ82Cl_SHPTaWJmLoaXnntdCgh7/view?usp=sharing
@@ -232,6 +244,16 @@ data = fetch_dataset(name="h20")
 + description: Hourly energy consumption data from the The Building Data Genome Project 2 with building metadata and weather data. https://github.com/buds-lab/building-data-genome-project-2
 + source: Miller, C., Kathirgamanathan, A., Picchetti, B. et al. The Building Data Genome Project 2, energy meter data from the ASHRAE Great Energy Predictor III competition. Sci Data 7, 368 (2020). https://doi.org/10.1038/s41597-020-00712-x
 
+### bdg2_hourly_sample
+
++ url: https://raw.githubusercontent.com/skforecast/skforecast-datasets/refs/heads/main/data/bdg2_hourly_sample.csv
++ sep: 
++ index_col: timestamp
++ date_format: %Y-%m-%d %H:%M:%S
++ freq: H
++ file_type: csv
++ description: Hourly energy consumption data of three buildings sampled from the The Building Data Genome Project 2. https://github.com/buds-lab/building-data-genome-project-2
++ source: Miller, C., Kathirgamanathan, A., Picchetti, B. et al. The Building Data Genome Project 2, energy meter data from the ASHRAE Great Energy Predictor III competition. Sci Data 7, 368 (2020). https://doi.org/10.1038/s41597-020-00712-x
 
 ### m5
 
@@ -257,7 +279,7 @@ data = fetch_dataset(name="h20")
 + date_format: %Y-%m-%d %H:%M:%S
 + freq: 15min
 + file_type: csv
-+ description: Data from an electricity transformer station was collected between July 2016 and July 2018 (2 years × 365 days × 24 hours × 4 intervals per hour = 70,080 data points). Each data point consists of 8 features, including the date of the point, the predictive value "Oil Temperature (OT)", and 6 different types of external power load features: High UseFul Load (HUFL), High UseLess Load (HULL), Middle UseFul Load (MUFL), Middle UseLess Load (MULL), Low UseFul Load (LUFL), Low UseLess Load(LULL).
++ description: Data from an electricity transformer station was collected between July 2016 and July 2018 (2 years x 365 days x 24 hours x 4 intervals per hour = 70,080 data points). Each data point consists of 8 features, including the date of the point, the predictive value "Oil Temperature (OT)", and 6 different types of external power load features: High UseFul Load (HUFL), High UseLess Load (HULL), Middle UseFul Load (MUFL), Middle UseLess Load (MULL), Low UseFul Load (LUFL), Low UseLess Load(LULL).
 + source: Zhou, Haoyi & Zhang, Shanghang & Peng, Jieqi & Zhang, Shuai & Li, Jianxin & Xiong, Hui & Zhang, Wancai. (2020). Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting. [10.48550/arXiv.2012.07436](https://arxiv.org/abs/2012.07436). https://github.com/zhouhaoyi/ETDataset
 
 
@@ -269,7 +291,7 @@ data = fetch_dataset(name="h20")
 + date_format: %Y-%m-%d %H:%M:%S
 + freq: 15min
 + file_type: csv
-+ description: Data from an electricity transformer station was collected between July 2016 and July 2018 (2 years × 365 days × 24 hours × 4 intervals per hour = 70,080 data points). Each data point consists of 8 features, including the date of the point, the predictive value "Oil Temperature (OT)", and 6 different types of external power load features: High UseFul Load (HUFL), High UseLess Load (HULL), Middle UseFul Load (MUFL), Middle UseLess Load (MULL), Low UseFul Load (LUFL), Low UseLess Load(LULL).
++ description: Data from an electricity transformer station was collected between July 2016 and July 2018 (2 years x 365 days x 24 hours x 4 intervals per hour = 70,080 data points). Each data point consists of 8 features, including the date of the point, the predictive value "Oil Temperature (OT)", and 6 different types of external power load features: High UseFul Load (HUFL), High UseLess Load (HULL), Middle UseFul Load (MUFL), Middle UseLess Load (MULL), Low UseFul Load (LUFL), Low UseLess Load(LULL).
 + source: Zhou, Haoyi & Zhang, Shanghang & Peng, Jieqi & Zhang, Shuai & Li, Jianxin & Xiong, Hui & Zhang, Wancai. (2020). Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting. [10.48550/arXiv.2012.07436](https://arxiv.org/abs/2012.07436). https://github.com/zhouhaoyi/ETDataset
 
 
@@ -281,7 +303,7 @@ data = fetch_dataset(name="h20")
 + date_format: %Y-%m-%d %H:%M:%S
 + freq: 15min
 + file_type: csv
-+ description: Data from an electricity transformer station was collected between July 2016 and July 2018 (2 years × 365 days × 24 hours × 4 intervals per hour = 70,080 data points). Each data point consists of 8 features, including the date of the point, the predictive value "Oil Temperature (OT)", and 6 different types of external power load features: High UseFul Load (HUFL), High UseLess Load (HULL), Middle UseFul Load (MUFL), Middle UseLess Load (MULL), Low UseFul Load (LUFL), Low UseLess Load(LULL). Additional variables are created based on calendar information (year, month, week, day of the week, and hour). These variables have been encoded using the cyclical encoding technique (sin and cos transformations) to preserve the cyclical nature of the data.
++ description: Data from an electricity transformer station was collected between July 2016 and July 2018 (2 years x 365 days x 24 hours x 4 intervals per hour = 70,080 data points). Each data point consists of 8 features, including the date of the point, the predictive value "Oil Temperature (OT)", and 6 different types of external power load features: High UseFul Load (HUFL), High UseLess Load (HULL), Middle UseFul Load (MUFL), Middle UseLess Load (MULL), Low UseFul Load (LUFL), Low UseLess Load(LULL). Additional variables are created based on calendar information (year, month, week, day of the week, and hour). These variables have been encoded using the cyclical encoding technique (sin and cos transformations) to preserve the cyclical nature of the data.
 + source: Zhou, Haoyi & Zhang, Shanghang & Peng, Jieqi & Zhang, Shuai & Li, Jianxin & Xiong, Hui & Zhang, Wancai. (2020). Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting. [10.48550/arXiv.2012.07436](https://arxiv.org/abs/2012.07436). https://github.com/zhouhaoyi/ETDataset
 
 
