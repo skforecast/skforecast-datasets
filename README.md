@@ -229,7 +229,7 @@ data = fetch_dataset(name="h20")
 + date_format: %Y-%m-%d %H:%M:%S
 + freq: H
 + file_type: csv
-+ description: Daily energy consumption data of three buildings sampled from the The Building Data Genome Project 2. https://github.com/buds-lab/building-data-genome-project-2
++ description: Daily energy consumption data of two buildings sampled from the The Building Data Genome Project 2. https://github.com/buds-lab/building-data-genome-project-2
 + source: Miller, C., Kathirgamanathan, A., Picchetti, B. et al. The Building Data Genome Project 2, energy meter data from the ASHRAE Great Energy Predictor III competition. Sci Data 7, 368 (2020). https://doi.org/10.1038/s41597-020-00712-x
 
 
@@ -252,7 +252,7 @@ data = fetch_dataset(name="h20")
 + date_format: %Y-%m-%d %H:%M:%S
 + freq: H
 + file_type: csv
-+ description: Hourly energy consumption data of three buildings sampled from the The Building Data Genome Project 2. https://github.com/buds-lab/building-data-genome-project-2
++ description: Hourly energy consumption data of two buildings sampled from the The Building Data Genome Project 2. https://github.com/buds-lab/building-data-genome-project-2
 + source: Miller, C., Kathirgamanathan, A., Picchetti, B. et al. The Building Data Genome Project 2, energy meter data from the ASHRAE Great Energy Predictor III competition. Sci Data 7, 368 (2020). https://doi.org/10.1038/s41597-020-00712-x
 
 ### m5
