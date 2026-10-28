@@ -364,3 +364,4 @@ data = fetch_dataset(name="h20")
 + file_type: csv
 + description: Hourly electricity load (MW) of Spain, Portugal, France, Italy and Germany from 2019-01-01 00:00 to 2025-12-31 22:00 (UTC). Values reported every 15 minutes are averaged to hourly. One binary column per country (holiday_spain, holiday_portugal, ...) flags its national public holidays, using the local date of each country. It includes real events such as the COVID-19 lockdowns of 2020 and the Iberian blackout of 2025-04-28 (Spain has no data during the blackout).
 + source: Energy-Charts.info, Fraunhofer Institute for Solar Energy Systems ISE, licensed under CC BY 4.0 (https://api.energy-charts.info/). Public holidays from Nager.Date (https://date.nager.at).
++ build script: scripts/build_europe_electricity_load.py (needs pandas; from the root of the repository: python scripts/build_europe_electricity_load.py)
