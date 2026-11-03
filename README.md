@@ -353,6 +353,22 @@ data = fetch_dataset(name="h2o")
 + source: Energy-Charts.info, Fraunhofer Institute for Solar Energy Systems ISE, licensed under CC BY 4.0 (https://api.energy-charts.info/). Public holidays from Nager.Date (https://date.nager.at).
 + build script: scripts/build_europe_electricity_load.py (needs pandas; from the root of the repository: python scripts/build_europe_electricity_load.py)
 
+## Other files
+
+These files of `data/` are not in the `datasets` registry of skforecast, so `fetch_dataset` does not load them. Read them with `pandas.read_csv` from `https://raw.githubusercontent.com/skforecast/skforecast-datasets/main/data/<file>`. Do not delete or rename them: the skforecast documentation and other tutorials link to them.
+
++ `bitcoin.csv`: daily Bitcoin prices (open, high, low and close), volume and market capitalization, from 2013-04-28 to 2022-01-01.
++ `demo_multi_series.csv`: five daily series (`id_1000` to `id_1004`) of different lengths in 2016, one of them with gaps. Long format: `series_id`, `timestamp`, `value`. Used in the skforecast documentation.
++ `demo_multi_series_exog.csv`: exogenous variables of `demo_multi_series.csv` for the whole of 2016 (day of the week as sine and cosine, air temperature and wind speed). Long format. Used in the skforecast documentation.
++ `energy_production_shutdown.csv`: daily energy production of a power plant from 2012-01-01 to 2014-12-30, with a shutdown from 2012-06-01 to 2012-09-30. Used in the skforecast documentation.
++ `generacion_energia_US_source.csv`: hourly electricity generation in the United States by energy source (coal, hydro, natural gas, nuclear, petroleum, solar, wind and other), from 2018-07-01 to 2021-03-15 (UTC). Long format: `date_time`, `series`, `source`.
++ `intermittent_demand.csv`: hourly series with intermittent demand (58% of the hours are zero), from 2011-01-01 to 2012-12-31.
++ `visitas_por_dia_web_cienciadedatos_2020_2021.csv`: daily users of cienciadedatos.net from 2020-07-01 to 2021-12-04, an extension of `website_visits`. Dates in `%d/%m/%y` format.
+
+## Licenses
+
+The BSD 3-Clause license of this repository covers its scripts and this README, not the datasets. Each dataset keeps the license or terms of use of its original source, linked in its `source`: check them before reusing it. For example, the data of the Building Data Genome Project 2 (`bdg2_*`) is under a Creative Commons Attribution-ShareAlike license (https://github.com/buds-lab/building-data-genome-project-2), and `europe_electricity_load` under CC BY 4.0.
+
 ## Changing the data
 
 Every version of skforecast reads the files from the `main` branch of this repository, so a change in `data/` reaches all its users at once. Before merging it:
