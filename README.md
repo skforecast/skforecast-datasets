@@ -272,8 +272,9 @@ data = fetch_dataset(name="h2o")
 + date_format: %Y-%m-%d
 + freq: D
 + file_type: parquet
-+ description: Daily sales data from the M5 competition with product metadata and calendar data. Series ids keep the `_evaluation` suffix of the Kaggle files; `sell_price` is NaN before the product was first sold. Long format: one row per series and date.
-+ source: Addison Howard, inversion, Spyros Makridakis, and vangelis. M5 Forecasting - Accuracy. https://kaggle.com/competitions/m5-forecasting-accuracy, 2020. Kaggle.
++ description: Daily unit sales of the M5 Accuracy competition: 3049 products in 10 Walmart stores of California, Texas and Wisconsin (30490 series), with the product and store hierarchy, weekly sell prices, calendar events and SNAP days. Long format: one row per series and day, sorted by date, from d_1 to d_1969 (2011-01-29 to 2016-06-19): training d_1 to d_1913, validation d_1914 to d_1941 (2016-04-25 to 2016-05-22) and test d_1942 to d_1969 (2016-05-23 to 2016-06-19). Series ids are `<item_id>_<store_id>_evaluation`, as in the evaluation phase of the competition; `sell_price` is NaN when the product was not on sale that week.
++ source: Makridakis, S., Spiliotis, E. and Assimakopoulos, V. (2022). M5 accuracy competition: Results, findings, and conclusions. International Journal of Forecasting, 38(4), 1346-1364. https://doi.org/10.1016/j.ijforecast.2021.11.013. Data published by the organizers of the competition: https://github.com/Mcompetitions/M5-methods
++ build script: scripts/build_m5_daily.py (needs numpy, pandas 2.x and pyarrow; from the root of the repository: python scripts/build_m5_daily.py --workdir <folder for the downloads and the output>). Hugging Face card: huggingface/m5_daily/README.md
 
 ### ett_m1
 
@@ -367,7 +368,7 @@ These files of `data/` are not in the `datasets` registry of skforecast, so `fet
 
 ## Licenses
 
-The BSD 3-Clause license of this repository covers its scripts and this README, not the datasets. Each dataset keeps the license or terms of use of its original source, linked in its `source`: check them before reusing it. For example, the data of the Building Data Genome Project 2 (`bdg2_*`) is under a Creative Commons Attribution-ShareAlike license (https://github.com/buds-lab/building-data-genome-project-2), and `europe_electricity_load` under CC BY 4.0.
+The BSD 3-Clause license of this repository covers its scripts and this README, not the datasets. Each dataset keeps the license or terms of use of its original source, linked in its `source`: check them before reusing it. For example, the data of the Building Data Genome Project 2 (`bdg2_*`) is under a Creative Commons Attribution-ShareAlike license (https://github.com/buds-lab/building-data-genome-project-2), and `europe_electricity_load` under CC BY 4.0. `m5` is distributed under the terms of the organizers of the M5 competition (https://github.com/Mcompetitions/M5-methods), for research and educational use, not under an open license.
 
 ## Changing the data
 
